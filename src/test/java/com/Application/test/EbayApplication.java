@@ -45,7 +45,7 @@ public class EbayApplication extends DriverClass {
 		   productPage=new ProductPage(driver);
 		   paymentPage=new PaymentPage(driver);
 		   extent = new ExtentReports(System.getProperty("user.dir") +"/test-output/eBayAutomation.html", true);
-		   extent.loadConfig(new File(System.getProperty("user.dir")+"/extent-config.xml"));
+		   extent.loadConfig(new File(System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx"));
 		   ArrayList list =readExcelvalue(Constants.TESTDATA_SHEETNAME);
 			System.out.println(list);
 

@@ -19,7 +19,7 @@ public class ReadTestData {
         ArrayList  col = new ArrayList();
     try {
  
-        FileInputStream file = new FileInputStream(new File("C://Users//Pooja//Desktop//eBayTestData.xlsx"));
+        FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx"));
  
         //Get the workbook instance for XLS file 
         XSSFWorkbook workbook = new XSSFWorkbook(file);
