@@ -1,0 +1,1791 @@
+2018-08-02 23:43:45 INFO  EbayApplication:40 - Login in  to Application Started
+2018-08-02 23:43:45 INFO  Login:31 - Started User Login
+2018-08-02 23:43:58 INFO  Login:35 - sign in button isdislayed
+2018-08-02 23:43:58 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:43:59 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-02 23:44:05 INFO  KeyActions:35 - Enter the text--test@123in te text box
+2018-08-02 23:44:11 INFO  Login:45 - Entered User name and password
+2018-08-02 23:44:11 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:44:16 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:44:59 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-02 23:44:59 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:01 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:01 INFO  DriverClass:58 - User is signed in successfully
+2018-08-02 23:45:01 INFO  EbayApplication:57 - Select Product Started
+2018-08-02 23:45:01 INFO  ProductPage:36 - Search for the Product started
+2018-08-02 23:45:02 INFO  KeyActions:35 - Enter the text--14 inch TVin te text box
+2018-08-02 23:45:20 INFO  ProductPage:57 - Search Results are displayed
+2018-08-02 23:45:20 INFO  EbayApplication:74 - Select Product Started
+2018-08-02 23:45:20 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-02 23:45:21 INFO  ProductPage:77 - Filter button clicked
+2018-08-02 23:45:21 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:23 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:23 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:26 INFO  KeyActions:35 - Enter the text--1000in te text box
+2018-08-02 23:45:32 INFO  KeyActions:35 - Enter the text--8000in te text box
+2018-08-02 23:45:37 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:38 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:45:39 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-02 23:46:19 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/textview_item_count'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.ProductPage.setFilterForProduct(ProductPage.java:92)
+	at com.Application.test.EbayApplication.selectProduct(EbayApplication.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/textview_item_count']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-02 23:47:00 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-02 23:47:01 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-02 23:47:01 INFO  DriverClass:107 - Screen width: 1080
+2018-08-02 23:47:01 INFO  DriverClass:109 - screen width 1776
+2018-08-02 23:47:01 INFO  DriverClass:112 - start x 540
+2018-08-02 23:47:01 INFO  DriverClass:113 - start y 888
+2018-08-02 23:47:01 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-02 23:47:01 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-02 23:47:04 INFO  ProductPage:132 - Product 3 in the search result will be selected
+2018-08-02 23:47:04 INFO  ProductPage:142 - Selected product's Name is : Pushbrite Ecosonic 17 inch Portable HD LED TV with USB VGA HDMI SD Card Support
+2018-08-02 23:47:04 INFO  ProductPage:151 - Selected product's price is : ? 5,299
+2018-08-02 23:47:07 INFO  ProductPage:167 - But it now button is displyed
+2018-08-02 23:47:07 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:09 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:26 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-02 23:47:26 INFO  DriverClass:107 - Screen width: 1080
+2018-08-02 23:47:26 INFO  DriverClass:109 - screen width 1776
+2018-08-02 23:47:26 INFO  DriverClass:112 - start x 540
+2018-08-02 23:47:26 INFO  DriverClass:113 - start y 888
+2018-08-02 23:47:26 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-02 23:47:26 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-02 23:47:27 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-02 23:47:27 INFO  DriverClass:107 - Screen width: 1080
+2018-08-02 23:47:27 INFO  DriverClass:109 - screen width 1776
+2018-08-02 23:47:27 INFO  DriverClass:112 - start x 540
+2018-08-02 23:47:27 INFO  DriverClass:113 - start y 888
+2018-08-02 23:47:27 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-02 23:47:27 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-02 23:47:30 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-02 23:47:30 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:30 INFO  EbayApplication:104 - Payment process of the selected  Product Started
+2018-08-02 23:47:37 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:38 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:39 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:47:59 INFO  KeyActions:35 - Enter the text--rtin te text box
+2018-08-02 23:48:05 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:48:15 INFO  DriverClass:42 - error message is displayedPlease enter your register Virtual Payment Address(VPA).
+2018-08-02 23:48:15 INFO  KeyActions:25 - Click on the the Element
+2018-08-02 23:48:42 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:06:03 INFO  EbayApplication:40 - Login in  to Application Started
+2018-08-03 00:06:03 INFO  Login:31 - Started User Login
+2018-08-03 00:06:12 INFO  Login:35 - sign in button isdislayed
+2018-08-03 00:06:12 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:06:12 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-03 00:06:19 INFO  KeyActions:35 - Enter the text--test@123in te text box
+2018-08-03 00:06:24 INFO  Login:45 - Entered User name and password
+2018-08-03 00:06:24 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:06:28 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:10 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 00:07:10 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:12 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:12 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 00:07:12 INFO  EbayApplication:57 - Select Product Started
+2018-08-03 00:07:12 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 00:07:14 INFO  KeyActions:35 - Enter the text--11 inch TVin te text box
+2018-08-03 00:07:30 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 00:07:30 INFO  EbayApplication:74 - Select Product Started
+2018-08-03 00:07:30 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 00:07:31 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 00:07:31 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:33 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:33 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:36 INFO  KeyActions:35 - Enter the text--1000in te text box
+2018-08-03 00:07:41 INFO  KeyActions:35 - Enter the text--8000in te text box
+2018-08-03 00:07:47 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:48 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:07:49 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 00:07:52 INFO  ProductPage:103 - 1  results were found for thr search
+2018-08-03 00:07:52 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 00:07:52 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:07:52 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:07:52 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:07:52 INFO  DriverClass:112 - start x 540
+2018-08-03 00:07:52 INFO  DriverClass:113 - start y 888
+2018-08-03 00:07:52 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:07:52 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:07:55 INFO  ProductPage:132 - Product 2 in the search result will be selected
+2018-08-03 00:07:56 INFO  ProductPage:142 - Selected product's Name is : PORTABLE 9.5 inch LED TV with AV input USB FM and MMC Reader Remote
+2018-08-03 00:07:56 INFO  ProductPage:151 - Selected product's price is : ? 2,999
+2018-08-03 00:07:59 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 00:07:59 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:01 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:11 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:08:11 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:08:11 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:08:11 INFO  DriverClass:112 - start x 540
+2018-08-03 00:08:11 INFO  DriverClass:113 - start y 888
+2018-08-03 00:08:11 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:08:11 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:08:13 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:08:13 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:08:13 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:08:13 INFO  DriverClass:112 - start x 540
+2018-08-03 00:08:13 INFO  DriverClass:113 - start y 888
+2018-08-03 00:08:13 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:08:13 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:08:16 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 00:08:16 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:17 INFO  EbayApplication:104 - Payment process of the selected  Product Started
+2018-08-03 00:08:22 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:23 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:24 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:46 INFO  KeyActions:35 - Enter the text--rtin te text box
+2018-08-03 00:08:51 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:08:58 INFO  DriverClass:43 - error message is displayedPlease enter your register Virtual Payment Address(VPA).
+2018-08-03 00:08:58 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:09:10 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:20:23 INFO  EbayApplication:42 - Login in  to Application Started
+2018-08-03 00:20:23 INFO  Login:31 - Started User Login
+2018-08-03 00:20:27 INFO  Login:35 - sign in button isdislayed
+2018-08-03 00:20:27 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:20:27 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-03 00:20:34 INFO  KeyActions:35 - Enter the text--test@123in te text box
+2018-08-03 00:20:39 INFO  Login:45 - Entered User name and password
+2018-08-03 00:20:39 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:20:44 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:27 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 00:21:27 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:28 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:29 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 00:21:31 INFO  EbayApplication:59 - Select Product Started
+2018-08-03 00:21:31 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 00:21:31 INFO  KeyActions:35 - Enter the text--11 inch TVin te text box
+2018-08-03 00:21:49 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 00:21:49 INFO  EbayApplication:76 - Select Product Started
+2018-08-03 00:21:49 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 00:21:50 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 00:21:50 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:52 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:52 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:21:55 INFO  KeyActions:35 - Enter the text--1000in te text box
+2018-08-03 00:22:00 INFO  KeyActions:35 - Enter the text--8000in te text box
+2018-08-03 00:22:06 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:22:07 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:22:08 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 00:22:11 INFO  ProductPage:103 - 1  results were found for thr search
+2018-08-03 00:22:11 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 00:22:12 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:22:12 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:22:12 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:22:12 INFO  DriverClass:112 - start x 540
+2018-08-03 00:22:12 INFO  DriverClass:113 - start y 888
+2018-08-03 00:22:12 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:22:12 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:22:14 INFO  ProductPage:132 - Product 3 in the search result will be selected
+2018-08-03 00:22:15 INFO  ProductPage:142 - Selected product's Name is : Worldtech 13" WT-1351 33 cm (13 inches/12.5 Inch) LED TV USB/AV Input/ HDMI/VGA
+2018-08-03 00:22:15 INFO  ProductPage:151 - Selected product's price is : ? 5,999
+2018-08-03 00:22:19 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 00:22:19 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:23:00 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:23:00 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:23:00 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:23:00 INFO  DriverClass:112 - start x 540
+2018-08-03 00:23:00 INFO  DriverClass:113 - start y 888
+2018-08-03 00:23:00 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:23:00 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:23:02 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:23:02 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:23:02 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:23:02 INFO  DriverClass:112 - start x 540
+2018-08-03 00:23:02 INFO  DriverClass:113 - start y 888
+2018-08-03 00:23:02 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:23:02 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:23:04 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 00:23:05 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:23:05 INFO  EbayApplication:106 - Payment process of the selected  Product Started
+2018-08-03 00:23:10 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:23:12 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:23:13 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:23:31 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Android bootstrap socket crashed: Error: This socket has been ended by the other party (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17.64 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.ebay.mobile, noReset=false, deviceName=ZY3229P5GB, fullReset=true, platform=LINUX, deviceUDID=ZY3229P5GB, desired={app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, appPackage=com.ebay.mobile, setWebContentsDebuggingEnabled=true, noReset=false, deviceName=Motorola, fullReset=true, appActivity=com.ebay.mobile.activities.MainActivity, newCommandTimeout=300, platformVersion=7.1.1, browserName=, unicodeKeyboard=true, platformName=Android, resetKeyboard=true, autoAcceptAlerts=true}, newCommandTimeout=300, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, deviceManufacturer=motorola, resetKeyboard=true, app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, setWebContentsDebuggingEnabled=true, warnings={}, databaseEnabled=false, appActivity=com.ebay.mobile.activities.MainActivity, locationContextEnabled=false, deviceModel=Moto G (5S) Plus, autoAcceptAlerts=true}]
+Session ID: 711b97bd-9f34-439c-adb2-ffa07f5fcb7e
+*** Element info: {Using=xpath, value=//*[@resource-id='vpAddress']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:36)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+2018-08-03 00:23:31 INFO  KeyActions:35 - Enter the text--rtin te text box
+2018-08-03 00:46:17 INFO  EbayApplication:42 - Login in  to Application Started
+2018-08-03 00:46:17 INFO  Login:31 - Started User Login
+2018-08-03 00:46:20 INFO  Login:35 - sign in button isdislayed
+2018-08-03 00:46:20 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:46:21 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-03 00:46:27 INFO  KeyActions:35 - Enter the text--test@123in te text box
+2018-08-03 00:46:33 INFO  Login:45 - Entered User name and password
+2018-08-03 00:46:33 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:46:37 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:20 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 00:47:20 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:22 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:22 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 00:47:23 INFO  EbayApplication:59 - Select Product Started
+2018-08-03 00:47:23 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 00:47:24 INFO  KeyActions:35 - Enter the text--19 inch  LED TVin te text box
+2018-08-03 00:47:41 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 00:47:41 INFO  EbayApplication:76 - Select Product Started
+2018-08-03 00:47:41 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 00:47:42 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 00:47:42 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:43 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:44 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:47:47 INFO  KeyActions:35 - Enter the text--1000in te text box
+2018-08-03 00:47:53 INFO  KeyActions:35 - Enter the text--8000in te text box
+2018-08-03 00:47:59 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:00 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:01 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 00:48:03 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 00:48:05 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:48:05 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:48:05 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:48:05 INFO  DriverClass:112 - start x 540
+2018-08-03 00:48:05 INFO  DriverClass:113 - start y 888
+2018-08-03 00:48:05 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:48:05 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:48:08 INFO  ProductPage:132 - Product 2 in the search result will be selected
+2018-08-03 00:48:09 INFO  ProductPage:142 - Selected product's Name is : 19 inch LED TV FULL HD WITH USB HDMI VGA PORT WITH ONE YEAR REPLACEMENT WARRANTY
+2018-08-03 00:48:09 INFO  ProductPage:151 - Selected product's price is : ? 7,199
+2018-08-03 00:48:13 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 00:48:13 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:14 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:26 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:48:26 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:48:26 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:48:26 INFO  DriverClass:112 - start x 540
+2018-08-03 00:48:26 INFO  DriverClass:113 - start y 888
+2018-08-03 00:48:26 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:48:26 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:48:28 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 00:48:28 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 00:48:28 INFO  DriverClass:109 - screen width 1776
+2018-08-03 00:48:28 INFO  DriverClass:112 - start x 540
+2018-08-03 00:48:28 INFO  DriverClass:113 - start y 888
+2018-08-03 00:48:28 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 00:48:28 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 00:48:30 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 00:48:30 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:31 INFO  EbayApplication:106 - Payment process of the selected  Product Started
+2018-08-03 00:48:37 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:39 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:48:39 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:49:04 INFO  KeyActions:35 - Enter the text--rtin te text box
+2018-08-03 00:49:17 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 00:49:29 INFO  DriverClass:46 - error message is displayedPlease enter your register Virtual Payment Address(VPA).
+2018-08-03 00:49:29 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:00:46 INFO  EbayApplication:45 - Login in  to Application Started
+2018-08-03 01:00:46 INFO  Login:31 - Started User Login
+2018-08-03 01:00:48 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Android bootstrap socket crashed: Error: This socket has been ended by the other party (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.41 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.ebay.mobile, noReset=false, deviceName=ZY3229P5GB, fullReset=true, platform=LINUX, deviceUDID=ZY3229P5GB, desired={app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, appPackage=com.ebay.mobile, setWebContentsDebuggingEnabled=true, noReset=false, deviceName=Motorola, fullReset=true, appActivity=com.ebay.mobile.activities.MainActivity, newCommandTimeout=300, platformVersion=7.1.1, browserName=, unicodeKeyboard=true, platformName=Android, resetKeyboard=true, autoAcceptAlerts=true}, newCommandTimeout=300, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, deviceManufacturer=motorola, resetKeyboard=true, app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, setWebContentsDebuggingEnabled=true, warnings={}, databaseEnabled=false, appActivity=com.ebay.mobile.activities.MainActivity, locationContextEnabled=false, deviceModel=Moto G (5S) Plus, autoAcceptAlerts=true}]
+Session ID: b9a03737-244d-412c-9d0b-4048c64df6bd
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'SIGN IN')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:33)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+2018-08-03 01:00:48 INFO  Login:37 - sign in button is not dislayed. Click on the menu and clicked for sign In
+2018-08-03 01:00:48 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:00:48 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:00:48 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-03 01:00:48 INFO  EbayApplication:63 - Select Product Started
+2018-08-03 01:00:48 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 01:00:48 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.ebay.mobile, noReset=false, deviceName=ZY3229P5GB, fullReset=true, platform=LINUX, deviceUDID=ZY3229P5GB, desired={app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, appPackage=com.ebay.mobile, setWebContentsDebuggingEnabled=true, noReset=false, deviceName=Motorola, fullReset=true, appActivity=com.ebay.mobile.activities.MainActivity, newCommandTimeout=300, platformVersion=7.1.1, browserName=, unicodeKeyboard=true, platformName=Android, resetKeyboard=true, autoAcceptAlerts=true}, newCommandTimeout=300, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, deviceManufacturer=motorola, resetKeyboard=true, app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, setWebContentsDebuggingEnabled=true, warnings={}, databaseEnabled=false, appActivity=com.ebay.mobile.activities.MainActivity, locationContextEnabled=false, deviceModel=Moto G (5S) Plus, autoAcceptAlerts=true}]
+Session ID: b9a03737-244d-412c-9d0b-4048c64df6bd
+*** Element info: {Using=xpath, value=//*[@resource-id='com.ebay.mobile:id/search_box']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.ProductPage.searchProductInApp(ProductPage.java:38)
+	at com.Application.test.EbayApplication.searchProduct(EbayApplication.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+2018-08-03 01:00:48 INFO  KeyActions:35 - Enter the text--19 inch  LED TVin te text box
+2018-08-03 01:00:48 INFO  EbayApplication:80 - Select Product Started
+2018-08-03 01:00:48 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 01:00:48 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 01:00:49 INFO  EbayApplication:110 - Payment process of the selected  Product Started
+2018-08-03 01:00:50 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:30)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:132)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 60 more
+2018-08-03 01:02:34 INFO  EbayApplication:45 - Login in  to Application Started
+2018-08-03 01:02:34 INFO  Login:31 - Started User Login
+2018-08-03 01:02:38 INFO  Login:35 - sign in button isdislayed
+2018-08-03 01:02:38 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:02:39 INFO  KeyActions:35 - Enter the text--user123@gmail.comin te text box
+2018-08-03 01:02:45 INFO  KeyActions:35 - Enter the text--test@123in te text box
+2018-08-03 01:02:51 INFO  Login:45 - Entered User name and password
+2018-08-03 01:02:51 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:02:54 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:03:38 ERROR KeyActions:49 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:47)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 01:03:38 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:03:40 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:03:40 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 01:03:40 INFO  EbayApplication:63 - Select Product Started
+2018-08-03 01:03:40 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 01:03:41 INFO  KeyActions:35 - Enter the text--19 inch  LED TVin te text box
+2018-08-03 01:03:59 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 01:03:59 INFO  EbayApplication:80 - Select Product Started
+2018-08-03 01:03:59 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 01:04:00 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 01:04:00 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:01 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:02 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:04 INFO  KeyActions:35 - Enter the text--1000in te text box
+2018-08-03 01:04:10 INFO  KeyActions:35 - Enter the text--8000in te text box
+2018-08-03 01:04:16 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:17 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:18 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 01:04:21 INFO  ProductPage:103 - 15  results were found for thr search
+2018-08-03 01:04:21 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 01:04:22 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 01:04:22 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 01:04:22 INFO  DriverClass:109 - screen width 1776
+2018-08-03 01:04:22 INFO  DriverClass:112 - start x 540
+2018-08-03 01:04:22 INFO  DriverClass:113 - start y 888
+2018-08-03 01:04:22 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 01:04:22 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 01:04:24 INFO  ProductPage:132 - Product 2 in the search result will be selected
+2018-08-03 01:04:25 INFO  ProductPage:142 - Selected product's Name is : 19 inch LED TV FULL HD WITH USB HDMI VGA PORT WITH ONE YEAR REPLACEMENT WARRANTY
+2018-08-03 01:04:26 INFO  ProductPage:151 - Selected product's price is : ? 7,199
+2018-08-03 01:04:30 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 01:04:30 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:32 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:46 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 01:04:46 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 01:04:46 INFO  DriverClass:109 - screen width 1776
+2018-08-03 01:04:46 INFO  DriverClass:112 - start x 540
+2018-08-03 01:04:46 INFO  DriverClass:113 - start y 888
+2018-08-03 01:04:46 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 01:04:46 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 01:04:47 INFO  DriverClass:99 - Entered Swipe Loop
+2018-08-03 01:04:48 INFO  DriverClass:107 - Screen width: 1080
+2018-08-03 01:04:48 INFO  DriverClass:109 - screen width 1776
+2018-08-03 01:04:48 INFO  DriverClass:112 - start x 540
+2018-08-03 01:04:48 INFO  DriverClass:113 - start y 888
+2018-08-03 01:04:48 INFO  DriverClass:114 - right swipe starting point - 540
+2018-08-03 01:04:48 INFO  DriverClass:127 - Swiping in up  direction
+2018-08-03 01:04:50 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 01:04:50 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:51 INFO  EbayApplication:110 - Payment process of the selected  Product Started
+2018-08-03 01:04:56 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:58 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:04:59 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 01:05:21 INFO  KeyActions:35 - Enter the text--rtin te text box
+2018-08-03 01:05:27 INFO  KeyActions:25 - Click on the the Element
+2018-08-03 11:41:07 INFO  EbayApplication:45 - Login in  to Application Started
+2018-08-03 11:41:07 INFO  Login:31 - Started User Login
+2018-08-03 11:41:11 INFO  Login:35 - sign in button isdislayed
+2018-08-03 11:41:11 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:41:12 INFO  KeyActions:51 - Enter the text--user123@gmail.comin te text box
+2018-08-03 11:41:18 INFO  KeyActions:51 - Enter the text--test@123in te text box
+2018-08-03 11:41:24 INFO  Login:45 - Entered User name and password
+2018-08-03 11:41:24 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:41:28 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:10 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 11:42:10 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:12 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:12 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 11:42:12 INFO  EbayApplication:63 - Select Product Started
+2018-08-03 11:42:12 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 11:42:13 INFO  KeyActions:51 - Enter the text--19 inch  LED TVin te text box
+2018-08-03 11:42:31 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 11:42:31 INFO  EbayApplication:80 - Select Product Started
+2018-08-03 11:42:31 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 11:42:31 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 11:42:31 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:32 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:33 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:35 INFO  KeyActions:51 - Enter the text--1000in te text box
+2018-08-03 11:42:40 INFO  KeyActions:51 - Enter the text--8000in te text box
+2018-08-03 11:42:46 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:47 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:42:48 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 11:42:51 INFO  ProductPage:103 - 15  results were found for thr search
+2018-08-03 11:42:51 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 11:42:53 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 11:42:53 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 11:42:53 INFO  DriverClass:125 - screen width 1776
+2018-08-03 11:42:53 INFO  DriverClass:128 - start x 540
+2018-08-03 11:42:53 INFO  DriverClass:129 - start y 888
+2018-08-03 11:42:53 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 11:42:53 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 11:42:56 INFO  ProductPage:132 - Product 2 in the search result will be selected
+2018-08-03 11:42:56 INFO  ProductPage:142 - Selected product's Name is : UNICRON 19 inch LED TV FULL HD (SAMSUNG PANEL) 1 YEAR ONSITE WARRANTY REFURBISH
+2018-08-03 11:42:57 INFO  ProductPage:151 - Selected product's price is : ? 6,899
+2018-08-03 11:43:03 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 11:43:03 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:43:05 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:43:50 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 11:43:50 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 11:43:50 INFO  DriverClass:125 - screen width 1776
+2018-08-03 11:43:50 INFO  DriverClass:128 - start x 540
+2018-08-03 11:43:50 INFO  DriverClass:129 - start y 888
+2018-08-03 11:43:50 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 11:43:50 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 11:43:52 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 11:43:52 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 11:43:52 INFO  DriverClass:125 - screen width 1776
+2018-08-03 11:43:52 INFO  DriverClass:128 - start x 540
+2018-08-03 11:43:52 INFO  DriverClass:129 - start y 888
+2018-08-03 11:43:52 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 11:43:52 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 11:44:05 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 11:44:45 INFO  EbayApplication:110 - Payment process of the selected  Product Started
+2018-08-03 11:45:25 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@text='UPI'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:30)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.view.View[@text='UPI']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 11:58:36 INFO  EbayApplication:65 - Login in  to Application Started
+2018-08-03 11:58:36 INFO  Login:31 - Started User Login
+2018-08-03 11:58:56 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Android bootstrap socket crashed: Error: This socket has been ended by the other party (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19.15 seconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.ebay.mobile, noReset=false, deviceName=ZY3229P5GB, fullReset=true, platform=LINUX, deviceUDID=ZY3229P5GB, desired={app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, appPackage=com.ebay.mobile, setWebContentsDebuggingEnabled=true, noReset=false, deviceName=Motorola, fullReset=true, appActivity=com.ebay.mobile.activities.MainActivity, newCommandTimeout=300, platformVersion=7.1.1, browserName=, unicodeKeyboard=true, platformName=Android, resetKeyboard=true, autoAcceptAlerts=true}, newCommandTimeout=300, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, browserName=, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, deviceManufacturer=motorola, resetKeyboard=true, app=C:\Users\Pooja\workspace\automationAssignmentEbay\App\eBay.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, setWebContentsDebuggingEnabled=true, warnings={}, databaseEnabled=false, appActivity=com.ebay.mobile.activities.MainActivity, locationContextEnabled=false, deviceModel=Moto G (5S) Plus, autoAcceptAlerts=true}]
+Session ID: c58233e8-a670-4443-99ba-c72209200159
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'SIGN IN')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:33)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+2018-08-03 11:58:57 INFO  Login:37 - sign in button is not dislayed. Click on the menu and clicked for sign In
+2018-08-03 11:58:57 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:58:58 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 11:58:59 INFO  KeyActions:51 - Enter the text--CustomerUserNamein te text box
+2018-08-03 12:00:20 INFO  EbayApplication:65 - Login in  to Application Started
+2018-08-03 12:00:20 INFO  Login:31 - Started User Login
+2018-08-03 12:00:29 INFO  Login:35 - sign in button isdislayed
+2018-08-03 12:00:29 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:00:29 INFO  KeyActions:51 - Enter the text--CustomerUserNamein te text box
+2018-08-03 12:00:36 INFO  KeyActions:51 - Enter the text--Customerasswordin te text box
+2018-08-03 12:00:41 INFO  Login:45 - Entered User name and password
+2018-08-03 12:00:41 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:02:03 INFO  EbayApplication:83 - Select Product Started
+2018-08-03 12:02:03 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 12:02:43 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/search_box'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.ProductPage.searchProductInApp(ProductPage.java:38)
+	at com.Application.test.EbayApplication.searchProduct(EbayApplication.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/search_box']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 12:02:43 INFO  KeyActions:51 - Enter the text--searchTextin te text box
+2018-08-03 12:02:49 INFO  EbayApplication:100 - Select Product Started
+2018-08-03 12:02:49 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 12:02:50 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 12:02:51 INFO  EbayApplication:130 - Payment process of the selected  Product Started
+2018-08-03 12:02:52 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:30)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:132)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 60 more
+2018-08-03 12:04:24 INFO  EbayApplication:65 - Login in  to Application Started
+2018-08-03 12:04:24 INFO  Login:31 - Started User Login
+2018-08-03 12:04:28 INFO  Login:35 - sign in button isdislayed
+2018-08-03 12:04:28 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:04:28 INFO  KeyActions:51 - Enter the text--user123@gmail.comin te text box
+2018-08-03 12:04:34 INFO  KeyActions:51 - Enter the text--test@123in te text box
+2018-08-03 12:04:40 INFO  Login:45 - Entered User name and password
+2018-08-03 12:04:40 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:04:44 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:26 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 12:05:26 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:28 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:28 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 12:05:28 INFO  EbayApplication:83 - Select Product Started
+2018-08-03 12:05:28 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 12:05:29 INFO  KeyActions:51 - Enter the text--19-inch tvin te text box
+2018-08-03 12:05:47 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 12:05:47 INFO  EbayApplication:100 - Select Product Started
+2018-08-03 12:05:47 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 12:05:48 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 12:05:48 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:50 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:50 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:05:52 INFO  KeyActions:51 - Enter the text--1000.0in te text box
+2018-08-03 12:05:58 INFO  KeyActions:51 - Enter the text--8000.0in te text box
+2018-08-03 12:06:04 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:05 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:06 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 12:06:09 INFO  ProductPage:103 - 18  results were found for thr search
+2018-08-03 12:06:09 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 12:06:10 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:06:10 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:06:10 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:06:10 INFO  DriverClass:128 - start x 540
+2018-08-03 12:06:10 INFO  DriverClass:129 - start y 888
+2018-08-03 12:06:10 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:06:10 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:06:13 INFO  ProductPage:132 - Product 2 in the search result will be selected
+2018-08-03 12:06:13 INFO  ProductPage:142 - Selected product's Name is : 19 inch LED TV FULL HD WITH USB HDMI VGA PORT + 1 YEAR REPLACEMENT WARRANTY
+2018-08-03 12:06:14 INFO  ProductPage:151 - Selected product's price is : ? 7,199
+2018-08-03 12:06:17 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 12:06:17 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:18 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:30 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:06:30 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:06:30 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:06:30 INFO  DriverClass:128 - start x 540
+2018-08-03 12:06:30 INFO  DriverClass:129 - start y 888
+2018-08-03 12:06:30 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:06:30 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:06:32 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:06:32 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:06:32 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:06:32 INFO  DriverClass:128 - start x 540
+2018-08-03 12:06:32 INFO  DriverClass:129 - start y 888
+2018-08-03 12:06:32 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:06:32 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:06:34 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 12:06:35 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:35 INFO  EbayApplication:130 - Payment process of the selected  Product Started
+2018-08-03 12:06:41 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:42 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:06:43 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:07:27 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='vpAddress'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:37)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='vpAddress']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 12:12:16 INFO  EbayApplication:65 - Login in  to Application Started
+2018-08-03 12:12:16 INFO  Login:31 - Started User Login
+2018-08-03 12:12:56 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.Button[contains(@text,'SIGN IN')] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:33)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.Button[contains(@text,'SIGN IN')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 12:13:03 INFO  Login:35 - sign in button isdislayed
+2018-08-03 12:13:03 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:13:06 INFO  KeyActions:51 - Enter the text--user123@gmail.comin te text box
+2018-08-03 12:13:11 INFO  KeyActions:51 - Enter the text--test@123in te text box
+2018-08-03 12:13:17 INFO  Login:45 - Entered User name and password
+2018-08-03 12:13:17 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:13:21 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:13:34 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:132)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 47 more
+2018-08-03 12:13:35 INFO  EbayApplication:83 - Select Product Started
+2018-08-03 12:13:35 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 12:13:36 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.ProductPage.searchProductInApp(ProductPage.java:38)
+	at com.Application.test.EbayApplication.searchProduct(EbayApplication.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:132)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 60 more
+2018-08-03 12:13:36 INFO  KeyActions:51 - Enter the text--19-inch tvin te text box
+2018-08-03 12:13:37 INFO  EbayApplication:100 - Select Product Started
+2018-08-03 12:13:37 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 12:13:38 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 12:13:40 INFO  EbayApplication:130 - Payment process of the selected  Product Started
+2018-08-03 12:13:41 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
+	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:200)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:164)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.PaymentPage.processPayment(PaymentPage.java:30)
+	at com.Application.test.EbayApplication.paymentOfTheProductWithInvaidDetails(EbayApplication.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:132)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 60 more
+2018-08-03 12:33:01 INFO  EbayApplication:65 - Login in  to Application Started
+2018-08-03 12:33:01 INFO  Login:31 - Started User Login
+2018-08-03 12:33:04 INFO  Login:35 - sign in button isdislayed
+2018-08-03 12:33:04 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:33:05 INFO  KeyActions:51 - Enter the text--user123@gmail.comin te text box
+2018-08-03 12:33:11 INFO  KeyActions:51 - Enter the text--test@123in te text box
+2018-08-03 12:33:17 INFO  Login:45 - Entered User name and password
+2018-08-03 12:33:17 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:33:21 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:03 ERROR KeyActions:65 - Element is not visible on the page
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.utility.KeyActions.waitUntilElementVisible(KeyActions.java:63)
+	at com.Pages.Login.customerLogin(Login.java:51)
+	at com.Application.test.EbayApplication.loginIntoApplication(EbayApplication.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@resource-id='com.ebay.mobile:id/progress_bar']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'POOJA-HP', ip: '169.254.66.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 28 more
+2018-08-03 12:34:03 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:05 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:05 INFO  DriverClass:58 - User is signed in successfully
+2018-08-03 12:34:05 INFO  EbayApplication:83 - Select Product Started
+2018-08-03 12:34:05 INFO  ProductPage:36 - Search for the Product started
+2018-08-03 12:34:06 INFO  KeyActions:51 - Enter the text--19-inch tvin te text box
+2018-08-03 12:34:24 INFO  ProductPage:57 - Search Results are displayed
+2018-08-03 12:34:24 INFO  EbayApplication:100 - Select Product Started
+2018-08-03 12:34:24 INFO  ProductPage:73 - Select Random roduct started.
+2018-08-03 12:34:24 INFO  ProductPage:77 - Filter button clicked
+2018-08-03 12:34:24 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:26 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:27 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:29 INFO  KeyActions:51 - Enter the text--1000.0in te text box
+2018-08-03 12:34:35 INFO  KeyActions:51 - Enter the text--8000.0in te text box
+2018-08-03 12:34:40 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:41 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:34:43 INFO  ProductPage:90 - Filter is applied for the priceRange
+2018-08-03 12:34:53 INFO  ProductPage:103 - 18  results were found for thr search
+2018-08-03 12:34:53 INFO  ProductPage:119 - Select Random roduct started.
+2018-08-03 12:34:55 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:34:55 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:34:55 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:34:55 INFO  DriverClass:128 - start x 540
+2018-08-03 12:34:55 INFO  DriverClass:129 - start y 888
+2018-08-03 12:34:55 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:34:55 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:34:58 INFO  ProductPage:132 - Product 3 in the search result will be selected
+2018-08-03 12:34:58 INFO  ProductPage:142 - Selected product's Name is : 19 inch LED TV FULL HD WITH USB HDMI VGA PORT + 1 YEAR REPLACEMENT WARRANTY
+2018-08-03 12:34:59 INFO  ProductPage:151 - Selected product's price is : ? 7,199
+2018-08-03 12:35:02 INFO  ProductPage:167 - But it now button is displyed
+2018-08-03 12:35:02 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:35:04 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:35:20 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:35:20 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:35:20 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:35:20 INFO  DriverClass:128 - start x 540
+2018-08-03 12:35:20 INFO  DriverClass:129 - start y 888
+2018-08-03 12:35:20 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:35:20 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:35:21 INFO  DriverClass:115 - Entered Swipe Loop
+2018-08-03 12:35:21 INFO  DriverClass:123 - Screen width: 1080
+2018-08-03 12:35:21 INFO  DriverClass:125 - screen width 1776
+2018-08-03 12:35:21 INFO  DriverClass:128 - start x 540
+2018-08-03 12:35:21 INFO  DriverClass:129 - start y 888
+2018-08-03 12:35:21 INFO  DriverClass:130 - right swipe starting point - 540
+2018-08-03 12:35:21 INFO  DriverClass:143 - Swiping in up  direction
+2018-08-03 12:35:24 INFO  ProductPage:191 - Product Details are as same as selected
+2018-08-03 12:35:24 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:35:24 INFO  EbayApplication:130 - Payment process of the selected  Product Started
+2018-08-03 12:35:31 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:35:36 INFO  KeyActions:41 - Click on the the Element
+2018-08-03 12:35:36 INFO  KeyActions:41 - Click on the the Element

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [eBaySuite]">
+  <test name="Login(failed)">
+    <classes>
+      <class name="com.Application.test.EbayApplication">
+        <methods>
+          <include name="paymentOfTheProductWithInvaidDetails"/>
+          <include name="selectProduct"/>
+          <include name="searchProduct"/>
+          <include name="loginIntoApplication"/>
+          <include name="suite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Application.test.EbayApplication -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [eBaySuite] -->
