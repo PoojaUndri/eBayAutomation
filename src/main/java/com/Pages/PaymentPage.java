@@ -43,7 +43,7 @@ public boolean processPayment(String upidetail) throws Exception {
 			{
 				Thread.sleep(2000);
 			sendKeys(PaymentPageLocators.VPAddress, upidetail);
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			click(PaymentPageLocators.makePaymentButton);
 			}
 			
