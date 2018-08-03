@@ -36,6 +36,8 @@ public class KeyActions extends DriverClass {
 	{
 		
 	}
+	/** Click Action
+	 */
 	
 	public void click(By locator) throws Exception {
 		log.info("Click on the the Element");
@@ -47,6 +49,12 @@ public class KeyActions extends DriverClass {
 		}
 	}
 
+	/**
+	 * Send Keys Method
+	 * @param locator
+	 * @param strValue
+	 * @throws Exception
+	 */
 	public void sendKeys(By locator, String strValue) throws Exception {
 		log.info("Enter the text--" + strValue + "in te text box");
 		try {
@@ -56,6 +64,10 @@ public class KeyActions extends DriverClass {
 		}
 	}
 	
+	/**
+	 * Wait function for the element to be visible
+	 * @param locator
+	 */
 	public void waitUntilElementVisible(By locator) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver,10);
@@ -66,6 +78,11 @@ public class KeyActions extends DriverClass {
 		}
 	}
 	
+	/**
+	 * verify whether the element is displayed
+	 * @param locator
+	 * @return
+	 */
 	public boolean isDisplayed(By locator)
     {
 
@@ -81,7 +98,10 @@ public class KeyActions extends DriverClass {
 
     }
 	
-	
+	/**
+	 * Wait for the element to be invisible on the screem
+	 * @param locator
+	 */
 	 public void waitUntilElementInvisiblity(By locator) {
 
 		    try {
@@ -109,6 +129,7 @@ public class KeyActions extends DriverClass {
 				e.printStackTrace();
 			}
 	    }
+	/**Swipe action*/
 	
 	public void Swipe(String direction, String speed) throws InterruptedException
 	{
@@ -169,92 +190,6 @@ public class KeyActions extends DriverClass {
 	
 	
 	
-	public void readExcelvadfgdflue(String name){
-		
-		        ArrayList  col = new ArrayList();
-		    try {
-		 
-		        FileInputStream file = new FileInputStream(new File("C://Users//Pooja//Desktop//eBayTestData.xlsx"));
-		 
-		        //Get the workbook instance for XLS file 
-		        XSSFWorkbook workbook = new XSSFWorkbook(file);
-		 
-		        //Get first sheet from the workbook
-		        XSSFSheet sheet = workbook.getSheet(name);
-		 
-		        //Iterate through each rows from first sheet
-		        Iterator<Row> rowIterator = sheet.iterator();
-		        while(rowIterator.hasNext()) {
-		            Row row = rowIterator.next();
-		 
-		            //display from the third row until 5th
-		            if(row.getRowNum()>0){
-		            {
-		 
-		 
-		 
-		            //For each row, iterate through each columns
-		            Iterator<Cell> cellIterator = row.cellIterator();
-		            while(cellIterator.hasNext()) {
-		 
-		                //Getting the cell contents
-		                Cell cell = cellIterator.next();
-		 
-		                switch(cell.getCellType()) {
-		                    case Cell.CELL_TYPE_BOOLEAN:
-		                        System.out.print(cell.getBooleanCellValue() + "\t\t");
-		                        break;
-		                    case Cell.CELL_TYPE_NUMERIC:
-		                        System.out.print(cell.getNumericCellValue() + "\t\t");
-		                        break;
-		                    case Cell.CELL_TYPE_STRING:
-		                        System.out.print(cell.getStringCellValue() + "\t\t");
-		                        break;
-		                    case Cell.CELL_TYPE_FORMULA:
-		                        System.out.println(cell.getCellFormula());
-		                        break;
-		 
-		                   /** case Cell.CELL_TYPE_BLANK:
-		                        System.out.println("BLANK");
-		                        break;
-		                        **/
-		                }
-		 
-		                //add the values of the cell to the Arraylist 
-		                if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) 
-		                {
-		                System.out.print(cell.getNumericCellValue());
-		                col.add(cell.getNumericCellValue());
-		                } 
-		                else if (cell.getCellType() == Cell.CELL_TYPE_STRING) 
-		                {
-		                System.out.print(cell.getRichStringCellValue());
-		                col.add(cell.getRichStringCellValue());
-		                } 
-		                else if (cell.getCellType() == Cell.CELL_TYPE_BOOLEAN) 
-		                {
-		                System.out.print(cell.getBooleanCellValue());
-		                col.add(cell.getBooleanCellValue());
-		                }
-		            }
-		 
-		            }
-		            }
-		            System.out.println("");
-		 
-		        }
-		 
-		        file.close();
-		 
-		      
-		 
-		        } catch (FileNotFoundException e) {
-		            e.printStackTrace();
-		        } catch (IOException e) {
-		            e.printStackTrace();
-		        }
-		    }
-
 		
 	
 }

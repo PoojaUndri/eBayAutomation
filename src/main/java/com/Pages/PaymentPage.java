@@ -21,7 +21,12 @@ public class PaymentPage extends KeyActions {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);	}
 
-	
+	/**
+	 * Payment rocess using UPI
+	 * @param upidetail
+	 * @return
+	 * @throws Exception
+	 */
 
 public boolean processPayment(String upidetail) throws Exception {
 	
@@ -33,11 +38,12 @@ public boolean processPayment(String upidetail) throws Exception {
 			Thread.sleep(5000);
 			click(PaymentPageLocators.selectUPIRadioButton);
 			click(PaymentPageLocators.payButton);
-			waitUntilElementVisible(PaymentPageLocators.VPAddress);
+			Thread.sleep(2000);
 			if(isDisplayed(PaymentPageLocators.VPAddress))
 			{
+				Thread.sleep(2000);
 			sendKeys(PaymentPageLocators.VPAddress, upidetail);
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			click(PaymentPageLocators.makePaymentButton);
 			}
 			
@@ -46,8 +52,6 @@ public boolean processPayment(String upidetail) throws Exception {
 					
 					LOGGER.info("error message is displayed"+message);
 					click(PaymentPageLocators.okButton);
-					if(isDisplayed((PaymentPageLocators.homeButton)))
-					click(PaymentPageLocators.homeButton);
 					status=false;
 				}else{
 					status=true;

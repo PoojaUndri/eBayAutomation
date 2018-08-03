@@ -2,9 +2,9 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="eBaySuite">   
+<suite name="eBay Automation">   
     <!-- Tests started -->    
-        <test name="Login" preserve-order="true">
+        <test name="eBay" preserve-order="true">
         <classes>
         <class name="com.Application.test.EbayApplication"/>
         </classes>

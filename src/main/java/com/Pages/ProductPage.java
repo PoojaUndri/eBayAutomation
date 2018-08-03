@@ -32,9 +32,13 @@ public class ProductPage extends KeyActions {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Process to search Product
+	 * @param product
+	 * @return
+	 */
 	public boolean searchProductInApp(String product) {
 		log.info("Search for the Product started");
-		System.out.println("sdfasdf");
 		waitUntilElementVisible(ProductPageLocators.searchBoxForProduct);// com.ebay.mobile:id/image
 		try {
 			int count;
@@ -69,6 +73,12 @@ public class ProductPage extends KeyActions {
 		}
 	}
 
+	/**
+	 * Process to set Filter for the Search results
+	 * @param minPriceVal
+	 * @param maxPriceVal
+	 * @return
+	 */
 	public boolean setFilterForProduct(String minPriceVal, String maxPriceVal) {
 		log.info("Select Random roduct started.");
 		boolean filterstatus = false;
@@ -77,10 +87,10 @@ public class ProductPage extends KeyActions {
 				log.info("Filter button clicked");
 
 				click(ProductPageLocators.filterButton);
-				Thread.sleep(2);
+				Thread.sleep(2000);
 				if (isDisplayed(ProductPageLocators.priceRangeFilterButton)) {
 					click(ProductPageLocators.priceRangeFilterButton);
-					Thread.sleep(2);
+					Thread.sleep(2000);
 					click(ProductPageLocators.customPriceRangeButton);
 					waitUntilElementVisible(ProductPageLocators.priceRangeMin);
 					sendKeys(ProductPageLocators.priceRangeMin, minPriceVal);
@@ -88,7 +98,7 @@ public class ProductPage extends KeyActions {
 					click(ProductPageLocators.okButtonForFilter);
 					click(ProductPageLocators.filterDoneButton);
 					log.info("Filter is applied for the priceRange");
-					Thread.sleep(20);
+					Thread.sleep(2000);
 					waitUntilElementVisible(ProductPageLocators.searchResultsTotalCount);
 
 					String searchResultsCount = driver.findElement(
@@ -115,6 +125,10 @@ public class ProductPage extends KeyActions {
 		return filterstatus;
 	}
 
+	/**
+	 * Select a Random product
+	 * @return true on sucessful select
+	 */
 	public boolean selectProduct() {
 		log.info("Select Random roduct started.");
 
@@ -158,6 +172,11 @@ public class ProductPage extends KeyActions {
 
 	}
 
+	/**
+	 * Method to verify the product selected and TO Proceed for the payment
+	 * @return
+	 * @throws Exception
+	 */
 	public boolean proceedToOrderAndVerifyProduct() throws Exception {
 
 		try {
@@ -170,26 +189,23 @@ public class ProductPage extends KeyActions {
 				if (isDisplayed(ProductPageLocators.reviewButton)) {
 					waitUntilElementVisible(ProductPageLocators.reviewButton);
 					click(ProductPageLocators.reviewButton);
-					Thread.sleep(80);
-					wait.until(ExpectedConditions.invisibilityOf(driver
-							.findElement(ProductPageLocators.progressBar)));
+					Thread.sleep(8000);
+					wait.until(ExpectedConditions.invisibilityOf(driver.findElement(ProductPageLocators.progressBar)));
 					waitUntilElementVisible(ProductPageLocators.homeButton);
-					Thread.sleep(40);
+					Thread.sleep(4000);
 				}
 				((AndroidDriver) driver).getPageSource();
 			}
-			Swipe("up", "fast");
+			
 			Swipe("up", "medium");
 			driver.getPageSource();
-			Thread.sleep(3);
-			if (driver.findElement(
-					By.xpath("//*[contains(@text,'" + productName + "')]"))
-					.isDisplayed()
-					|| driver.findElement(
-							By.xpath("//*[contains(@text,'" + productPrice
-									+ "')]")).isDisplayed()) {
+			Thread.sleep(3000);
+			if (driver.findElement(By.xpath("//*[contains(@text,'" + productName + "')]")).isDisplayed() || driver.findElement(By.xpath("//*[contains(@text,'" + productPrice+ "')]")).isDisplayed()) {
 				log.info("Product Details are as same as selected");
+				Swipe("up", "medium");
+				Swipe("up", "medium");
 				if (isDisplayed(ProductPageLocators.proceedToPayButton))
+					
 					click(ProductPageLocators.proceedToPayButton);
 				return true;
 			} else {

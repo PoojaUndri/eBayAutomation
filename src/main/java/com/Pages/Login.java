@@ -73,22 +73,5 @@ public class Login extends KeyActions {
 		return false;
 	}
 
-	/*
-	 * @Test(priority=1) public void validUserLogin() throws Exception {
-	 * log.info("Started User Login Functions"); logger =
-	 * extent.startTest(Thread
-	 * .currentThread().getStackTrace()[1].getMethodName()
-	 * ).assignCategory(this.getClass().getSimpleName()); boolean loginStatus;
-	 * loginStatus=appMethods.login("user123@gmail.com", "test@123");
-	 * Assert.assertTrue(loginStatus); appMethods.searchProductInAp("TV");
-	 * log.info(" User Login in to the app is successfull"); }?
-	 */
-
-	/*
-	 * public static void main(String[] args) throws InterruptedException,
-	 * Exception { Login lg=new Login(); //lg.setUp(); //lg.userLogin();
-	 * 
-	 * 
-	 * }
-	 */
+	
 }
