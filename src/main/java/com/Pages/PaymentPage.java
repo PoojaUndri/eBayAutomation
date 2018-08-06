@@ -19,8 +19,7 @@ public class PaymentPage extends KeyActions {
 
 	public PaymentPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);	}
-
+	}
 	/**
 	 * Payment rocess using UPI
 	 * @param upidetail

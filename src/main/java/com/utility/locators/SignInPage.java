@@ -11,7 +11,7 @@ public class SignInPage {
 	public static By homeButtonOnMenu=By.xpath("//*[@resource-id='com.ebay.mobile:id/design_menu_item_text']");
 	public static By signInStatus=By.xpath("//*[@resource-id='com.ebay.mobile:id/textview_sign_in_status']");
 	public static By mayBeLaterButton=By.xpath("//android.widget.Button[contains(@text,'MAYBE LATER')]");
-	public static By loginErrorMessage=By.xpath("//*[@resource-id='com.ebay.mobile:id/textview_sign_in_status']");
+	public static By loginErrorMessage=By.xpath("//*[@resource-id='com.ebay.mobile:id/sign_in_alert_text_view']");
 	public static By pageLoad=By.xpath("//*[@resource-id='com.ebay.mobile:id/progress_bar']");
 	
 

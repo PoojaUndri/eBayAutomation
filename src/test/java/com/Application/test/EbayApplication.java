@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 import org.junit.AfterClass;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -64,7 +67,8 @@ public class EbayApplication extends DriverClass {
 	{
 		log.info("Login in  to Application Started");
 		logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
-		Boolean loginStatus = loginPage.customerLogin(userName.toString(),password.toString());
+		try{
+		boolean loginStatus = loginPage.customerLogin(userName.toString(),password.toString());
 		if(loginStatus)
 		{
 		logger.log(LogStatus.PASS, "Login in  to Application is Successful");
@@ -72,12 +76,15 @@ public class EbayApplication extends DriverClass {
 		else
 		{
 			logger.log(LogStatus.FAIL, "Login in  to Application is not Successful");
-			Assert.assertTrue(loginStatus);
+			assertEquals(loginStatus,true);
 		}
-		Assert.assertTrue(loginStatus);
+	
+	}catch (Exception e) {
+		e.printStackTrace();
 	}
+}
 	  
-		@Test(priority=2)
+		@Test(priority=2,dependsOnMethods={"loginIntoApplication"})
 	public void searchProduct()
 	{
 		log.info("Select Product Started");
@@ -90,11 +97,12 @@ public class EbayApplication extends DriverClass {
 		else
 		{
 			logger.log(LogStatus.FAIL, "Search product in the Aplication is  NOT Successful");
+			Assert.assertTrue(searchProdStatus);
 		}
-		Assert.assertTrue(searchProdStatus);
+	
 	}
 		
-		@Test(priority=3)
+		@Test(priority=3,dependsOnMethods={"searchProduct"})
 		public void selectProduct() throws Exception
 		{
 			log.info("Select Product Started");
@@ -124,7 +132,7 @@ public class EbayApplication extends DriverClass {
 		
 		}
 		
-		@Test(priority=4)
+		@Test(priority=4,dependsOnMethods={"selectProduct"})
 		public void paymentOfTheProductWithInvaidDetails() throws Exception
 		{
 			log.info("Payment process of the selected  Product Started");
@@ -142,11 +150,11 @@ public class EbayApplication extends DriverClass {
 			
 		}
 		
-		@AfterMethod
+		@AfterMethod(alwaysRun=true)
 		 public void getResult(ITestResult result){
 			 if(result.getStatus() == ITestResult.FAILURE){
-			 logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
-			 logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+			 logger.log(LogStatus.FAIL, "Failed Test case :"+result.getName());
+			 logger.log(LogStatus.FAIL, "Test case "+result.getName()+" "+result.getThrowable().getMessage());
 			 }else if(result.getStatus() == ITestResult.SKIP){
 			 logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 			 }

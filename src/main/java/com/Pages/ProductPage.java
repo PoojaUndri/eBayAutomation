@@ -29,7 +29,6 @@ public class ProductPage extends KeyActions {
 
 	public ProductPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
 	}
 
 	/**

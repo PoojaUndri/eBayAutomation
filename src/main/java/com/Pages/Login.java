@@ -17,7 +17,7 @@ public class Login extends KeyActions {
 
 	public Login(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);	}
+		}
 
 	/**
 	 * Method for User Login in to Appication
@@ -45,6 +45,11 @@ public class Login extends KeyActions {
 			log.info("Entered User name and password");
 			click( SignInPage.customerSignInButton);
 			
+			if(isDisplayed(SignInPage.loginErrorMessage))
+			{
+				log.info("Provided Credentials are invalid");
+				return false;
+			}
 
 			if (isDisplayed(SignInPage.mayBeLaterButton)) {
 				click( SignInPage.mayBeLaterButton);
