@@ -20,7 +20,7 @@
     <reportName></reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
-    <reportHeadline>Ebay Automation Report</reportHeadline>
+    <reportHeadline>Ebay Automation</reportHeadline>
     
     <!-- global date format override -->
     <!-- defaults to yyyy-MM-dd -->
