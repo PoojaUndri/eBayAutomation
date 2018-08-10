@@ -2,7 +2,7 @@ package com.utility.locators;
 
 import org.openqa.selenium.By;
 
-public class SignInPage {
+public class LogInPageLocators {
 	
 	public static By  customerSignInButton=By.xpath("//android.widget.Button[contains(@text,'SIGN IN')]");
 	public static By  customerUsernameTextBox=By.xpath("//*[@resource-id='com.ebay.mobile:id/edit_text_username']");

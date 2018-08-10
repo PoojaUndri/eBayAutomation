@@ -1,13 +1,18 @@
 package com.Application.test;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.junit.AfterClass;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
+
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +27,7 @@ import com.Pages.ProductPage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.utility.Constants;
+import com.utility.Constants1;
 import com.utility.driver.DriverClass;
 
 
@@ -33,32 +38,33 @@ public class EbayApplication extends DriverClass {
 	  Login loginPage;
 	  ProductPage productPage;
 	  PaymentPage paymentPage;
-	  Object userName;
-	  Object password;
-	  Object invalidPassword;
-	  Object searchVal;
-	  Object maxVal;
-	  Object minVal;
-	  Object UPIdetail;
-	  
+	  String userName;
+	  String password;
+	  String invalidPassword;
+	  String searchVal;
+	  String maxVal;
+	  String minVal;
+	  String UPIdetail;
+	  Map<String, String> data = null;
 	  @BeforeClass
-	  public void setUp()
+	  public void setUp() throws IOException
 	  {
 		   loginPage=new Login(driver);
 		   productPage=new ProductPage(driver);
 		   paymentPage=new PaymentPage(driver);
 		   extent = new ExtentReports(System.getProperty("user.dir") +"/test-output/eBayAutomation.html", true);
 		   extent.loadConfig(new File(System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx"));
-		   ArrayList list =readExcelvalue(Constants.TESTDATA_SHEETNAME);
-			System.out.println(list);
+		   Map<String, String> data = new HashMap<String, String>();
+		   data =getCellData(Constants1.TESTDATA_FILEPATH,Constants1.TESTDATA_SHEETNAME);
+			System.out.println(data);
 
-			userName = list.get(0);
-			password = list.get(1);
-			invalidPassword = list.get(2);
-			searchVal=list.get(3);
-			maxVal = list.get(4);
-			minVal = list.get(5);
-			UPIdetail=list.get(6);
+			userName = data.get("CustomerUserName");
+			password = data.get("CustomerPassword");
+			invalidPassword = data.get("InvalidPassword");
+			searchVal=data.get("searchText");
+			maxVal = data.get("MaxPriceValueForFilter");
+			minVal = data.get("MinPriceValueForFilter");
+			UPIdetail=data.get("UPIdetail");
 
 	}
 	  
@@ -68,7 +74,7 @@ public class EbayApplication extends DriverClass {
 		log.info("Login in  to Application Started");
 		logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
 		try{
-		boolean loginStatus = loginPage.customerLogin(userName.toString(),password.toString());
+		boolean loginStatus = loginPage.customerLogin(userName,password);
 		if(loginStatus)
 		{
 		logger.log(LogStatus.PASS, "Login in  to Application is Successful");
@@ -89,7 +95,7 @@ public class EbayApplication extends DriverClass {
 	{
 		log.info("Select Product Started");
 		logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
-		Boolean searchProdStatus=productPage.searchProductInApp(searchVal.toString());
+		Boolean searchProdStatus=productPage.searchProductInApp(searchVal);
 		if(searchProdStatus)
 		{
 			logger.log(LogStatus.PASS, "Search product in the Aplication is Successful");
@@ -108,7 +114,7 @@ public class EbayApplication extends DriverClass {
 			log.info("Select Product Started");
 			logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
 			try{
-			productPage.setFilterForProduct(minVal.toString(),maxVal.toString());
+			productPage.setFilterForProduct(minVal,maxVal);
 			boolean selectProductStatus=productPage.selectProduct();
 			if(selectProductStatus)	{
 				logger.log(LogStatus.PASS, "Select product in the Aplication is Successful");
@@ -137,7 +143,7 @@ public class EbayApplication extends DriverClass {
 		{
 			log.info("Payment process of the selected  Product Started");
 			logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
-			boolean paymentStatus=paymentPage.processPayment(UPIdetail.toString());
+			boolean paymentStatus=paymentPage.processPayment(UPIdetail);
 			if(paymentStatus)
 			{
 				logger.log(LogStatus.FAIL, "payment was done  sucessfully");

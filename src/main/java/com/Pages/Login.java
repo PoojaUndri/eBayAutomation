@@ -2,11 +2,9 @@ package com.Pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import com.utility.KeyActions;
-import com.utility.locators.SignInPage;
-
+import com.utility.locators.LogInPageLocators;
 public class Login extends KeyActions {
 
 	private static final Logger log = Logger.getLogger(Login.class.getName());
@@ -30,36 +28,36 @@ public class Login extends KeyActions {
 			throws Exception {
 		log.info("Started User Login");
 		try {
-			waitUntilElementVisible(SignInPage.customerSignInButton);
-			if (isDisplayed(SignInPage.customerSignInButton)) {
+			waitUntilElementVisible(LogInPageLocators.customerSignInButton);
+			if (isDisplayed(LogInPageLocators.customerSignInButton)) {
 				log.info("sign in button isdislayed");
 			} else {
 				log.info("sign in button is not dislayed. Click on the menu and clicked for sign In");
-				click( SignInPage.menuButton);
+				click( LogInPageLocators.menuButton);
 
 			}
 
-			click( SignInPage.customerSignInButton);
-			sendKeys(SignInPage.customerUsernameTextBox, userName);
-			sendKeys(SignInPage.customerasswordTextBox, password);
+			click( LogInPageLocators.customerSignInButton);
+			sendKeys(LogInPageLocators.customerUsernameTextBox, userName);
+			sendKeys(LogInPageLocators.customerasswordTextBox, password);
 			log.info("Entered User name and password");
-			click( SignInPage.customerSignInButton);
+			click( LogInPageLocators.customerSignInButton);
 			
-			if(isDisplayed(SignInPage.loginErrorMessage))
+			if(isDisplayed(LogInPageLocators.loginErrorMessage))
 			{
 				log.info("Provided Credentials are invalid");
 				return false;
 			}
 
-			if (isDisplayed(SignInPage.mayBeLaterButton)) {
-				click( SignInPage.mayBeLaterButton);
-				waitUntilElementVisible(SignInPage.pageLoad);
+			if (isDisplayed(LogInPageLocators.mayBeLaterButton)) {
+				click( LogInPageLocators.mayBeLaterButton);
+				waitUntilElementVisible(LogInPageLocators.pageLoad);
 			}
 
-			if (isDisplayed(SignInPage.menuButton)) {
-				click( SignInPage.menuButton);
-				if (isDisplayed(SignInPage.signInStatus)) {
-					click( SignInPage.homeButtonOnMenu);
+			if (isDisplayed(LogInPageLocators.menuButton)) {
+				click( LogInPageLocators.menuButton);
+				if (isDisplayed(LogInPageLocators.signInStatus)) {
+					click( LogInPageLocators.homeButtonOnMenu);
 					LOGGER.info("User is signed in successfully");
 					return true;
 				} 

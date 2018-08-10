@@ -1,26 +1,9 @@
 package com.utility;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import io.appium.java_client.android.AndroidDriver;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -105,7 +88,7 @@ public class KeyActions extends DriverClass {
 	 public void waitUntilElementInvisiblity(By locator) {
 
 		    try {
-		      WebDriverWait wait = new WebDriverWait(driver, Constants.EXPLICIT_WAIT);
+		      WebDriverWait wait = new WebDriverWait(driver, Constants1.EXPLICIT_WAIT);
 		      log.debug("Waiting for the invisibility of the element" );
 		      wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 		    } catch (Exception e) {

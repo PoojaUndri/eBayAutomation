@@ -5,6 +5,8 @@ import io.appium.java_client.android.AndroidDriver;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -13,35 +15,38 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 
-import com.utility.Constants;
+import com.utility.Constants1;
 import com.utility.ReadTestData;
 
 
 public class DriverClass extends ReadTestData {
+
+	
 
 	protected static final Logger LOGGER = Logger.getLogger(DriverClass.class);
 	public static WebDriver driver = null;
 	ReadTestData readData;
 
 	String applicationName;
-	Object platformName;
-	Object osVersion;
-	Object deviceName;
-	Object appackage;
-	Object appActivity;
+	String platformName;
+	String osVersion;
+	String deviceName;
+	String appackage;
+	String appActivity;
 
 	@BeforeSuite
 	public void suite() throws Exception {
 		try {
 			String detailInstanceName = new Object() {   }.getClass().getEnclosingMethod().getName();
-			ArrayList list =readExcelvalue(Constants.CAPABILITIE_SHEETNAME);
-			System.out.println(list);
+			 Map<String, String> data = new HashMap<String, String>();
+			 data =getCellData(Constants1.TESTDATA_FILEPATH,Constants1.CAPABILITIE_SHEETNAME);
+			System.out.println(data);
 
-			platformName = list.get(1);
-			osVersion = list.get(2);
-			deviceName = list.get(3);
-			appackage = list.get(4);
-			appActivity = list.get(5);
+			platformName = data.get("platformName");
+			osVersion = data.get("osVersion");
+			deviceName = data.get("deviceName");
+			appackage = data.get("appPackage");
+			appActivity = data.get("appActivity");
 			driver = getDriver();
 
 			System.out.println(driver);

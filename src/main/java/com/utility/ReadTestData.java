@@ -1,106 +1,75 @@
 package com.utility;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadTestData {
-	public ArrayList readExcelvalue(String name){
-		
-        ArrayList  col = new ArrayList();
-    try {
- 
-        FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx"));
- 
-        //Get the workbook instance for XLS file 
-        XSSFWorkbook workbook = new XSSFWorkbook(file);
- 
-        //Get first sheet from the workbook
-        XSSFSheet sheet = workbook.getSheet(name);
- 
-        //Iterate through each rows from first sheet
-        Iterator<Row> rowIterator = sheet.iterator();
-        while(rowIterator.hasNext()) {
-            Row row = rowIterator.next();
- 
-            //display from the third row until 5th
-            if(row.getRowNum()>1){
-            {
- 
- 
- 
-            //For each row, iterate through each columns
-            Iterator<Cell> cellIterator = row.cellIterator();
-            while(cellIterator.hasNext()) {
- 
-                //Getting the cell contents
-                Cell cell = cellIterator.next();
- 
-                switch(cell.getCellType()) {
-                    case Cell.CELL_TYPE_BOOLEAN:
-                        System.out.print(cell.getBooleanCellValue() + "\t\t");
-                        break;
-                    case Cell.CELL_TYPE_NUMERIC:
-                        System.out.print(cell.getNumericCellValue() + "\t\t");
-                        break;
-                    case Cell.CELL_TYPE_STRING:
-                        System.out.print(cell.getStringCellValue() + "\t\t");
-                        break;
-                    case Cell.CELL_TYPE_FORMULA:
-                        System.out.println(cell.getCellFormula());
-                        break;
- 
-                   /** case Cell.CELL_TYPE_BLANK:
-                        System.out.println("BLANK");
-                        break;
-                        **/
-                }
- 
-                //add the values of the cell to the Arraylist 
-                if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) 
-                {
-                System.out.print(cell.getNumericCellValue());
-                col.add(cell.getNumericCellValue());
-                } 
-                else if (cell.getCellType() == Cell.CELL_TYPE_STRING) 
-                {
-                System.out.print(cell.getRichStringCellValue());
-                col.add(cell.getRichStringCellValue());
-                } 
-                else if (cell.getCellType() == Cell.CELL_TYPE_BOOLEAN) 
-                {
-                System.out.print(cell.getBooleanCellValue());
-                col.add(cell.getBooleanCellValue());
-                }
-            }
- 
-            }
-            }
-            System.out.println("");
- 
-        }
-        
- 
-        file.close();
-       
-      
- 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-	return col;
-    }
+	
+	    public FileInputStream fis = null;
+	    public XSSFWorkbook workbook = null;
+	    public XSSFSheet sheet = null;
+	    public XSSFRow row = null;
+	    public XSSFCell cell = null;
+	    public String colVal_row0;
+	    public String colVal_row1;
+	    
+	    
+	    Map<String, String> data = null;
+	 
+	   
+	    public Map<String, String> getCellData(String filePath,String sheetName) throws IOException
+	    {
+	    	fis = new FileInputStream(filePath);
+	    	workbook = new XSSFWorkbook(fis);
+	    	data=new HashMap<String, String>();
+	        try
+	        {
+	            sheet = workbook.getSheet(sheetName);
+	            row = sheet.getRow(0);
+	            for(int i = 0; i < row.getLastCellNum(); i++)
+	            {
+	            	DataFormatter formatter = new DataFormatter();
+	            	colVal_row0=formatter.formatCellValue((row.getCell(i)));
+	                    
+	            	 
+	            row = sheet.getRow(1);
+	            cell = row.getCell(i);
+	 
+	            if(cell.getCellType() == Cell.CELL_TYPE_STRING)
+	               colVal_row1= cell.getStringCellValue();
+	            else if(cell.getCellType() == Cell.CELL_TYPE_NUMERIC || cell.getCellType() == Cell.CELL_TYPE_FORMULA)
+	            {
+	            	 colVal_row1 = String.valueOf(cell.getNumericCellValue());
+	              
+	            }else if(cell.getCellType() == Cell.CELL_TYPE_BLANK)
+	            	colVal_row1= "";
+	            else
+	                colVal_row1=String.valueOf(cell.getBooleanCellValue());
+	            row = sheet.getRow(0);
 
+	            data.put(colVal_row0, colVal_row1);
+	            }
+	            
+	        }
+	        catch(Exception e)
+	        {
+	            e.printStackTrace();
+	            
+	        }
+			return data;
+			
+	    }
+	    
+	    
+	}
+	
 
-}

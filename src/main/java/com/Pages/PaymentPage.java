@@ -2,11 +2,9 @@ package com.Pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import com.utility.KeyActions;
-import com.utility.locators.PaymentPageLocators;
-import com.utility.locators.ProductPageLocators;
+import com.utility.locators.PaymentPageLocator;
 
 public class PaymentPage extends KeyActions {
 	
@@ -31,26 +29,26 @@ public boolean processPayment(String upidetail) throws Exception {
 	
 	boolean status=false;
 	try {
-		waitUntilElementVisible(PaymentPageLocators.UPIpaymentButton);
-		if (isDisplayed(PaymentPageLocators.UPIpaymentButton)) {
-			click(PaymentPageLocators.UPIpaymentButton);
+		waitUntilElementVisible(PaymentPageLocator.UPIpaymentButton);
+		if (isDisplayed(PaymentPageLocator.UPIpaymentButton)) {
+			click(PaymentPageLocator.UPIpaymentButton);
 			Thread.sleep(5000);
-			click(PaymentPageLocators.selectUPIRadioButton);
-			click(PaymentPageLocators.payButton);
+			click(PaymentPageLocator.selectUPIRadioButton);
+			click(PaymentPageLocator.payButton);
 			Thread.sleep(2000);
-			if(isDisplayed(PaymentPageLocators.VPAddress))
+			if(isDisplayed(PaymentPageLocator.VPAddress))
 			{
 				Thread.sleep(2000);
-			sendKeys(PaymentPageLocators.VPAddress, upidetail);
+			sendKeys(PaymentPageLocator.VPAddress, upidetail);
 			Thread.sleep(5000);
-			click(PaymentPageLocators.makePaymentButton);
+			click(PaymentPageLocator.makePaymentButton);
 			}
 			
-			String message=driver.findElement(PaymentPageLocators.popUpMessageForVPA).getAttribute("text");
+			String message=driver.findElement(PaymentPageLocator.popUpMessageForVPA).getAttribute("text");
 				if (message.contains("Please enter your register Virtual")) {
 					
 					LOGGER.info("error message is displayed"+message);
-					click(PaymentPageLocators.okButton);
+					click(PaymentPageLocator.okButton);
 					status=false;
 				}else{
 					status=true;

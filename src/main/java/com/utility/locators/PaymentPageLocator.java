@@ -2,7 +2,7 @@ package com.utility.locators;
 
 import org.openqa.selenium.By;
 
-public class PaymentPageLocators {
+public class PaymentPageLocator {
 	
 
 	public static By selectAddress=By.xpath("//*[@text='select address']");
