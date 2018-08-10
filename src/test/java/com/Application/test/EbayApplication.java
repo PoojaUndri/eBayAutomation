@@ -1,22 +1,14 @@
 package com.Application.test;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.junit.AfterClass;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -28,24 +20,20 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.utility.Constants1;
+import com.utility.KeyActions;
+import com.utility.TestData;
 import com.utility.driver.DriverClass;
 
 
 public class EbayApplication extends DriverClass {
 	private static final Logger log = Logger.getLogger(EbayApplication.class.getName());
-	ExtentTest logger;
+		ExtentTest logger;
 	  ExtentReports extent;
 	  Login loginPage;
 	  ProductPage productPage;
 	  PaymentPage paymentPage;
-	  String userName;
-	  String password;
-	  String invalidPassword;
-	  String searchVal;
-	  String maxVal;
-	  String minVal;
-	  String UPIdetail;
-	  Map<String, String> data = null;
+	  TestData data;
+
 	  @BeforeClass
 	  public void setUp() throws IOException
 	  {
@@ -53,19 +41,8 @@ public class EbayApplication extends DriverClass {
 		   productPage=new ProductPage(driver);
 		   paymentPage=new PaymentPage(driver);
 		   extent = new ExtentReports(System.getProperty("user.dir") +"/test-output/eBayAutomation.html", true);
-		   extent.loadConfig(new File(System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx"));
-		   Map<String, String> data = new HashMap<String, String>();
-		   data =getCellData(Constants1.TESTDATA_FILEPATH,Constants1.TESTDATA_SHEETNAME);
-			System.out.println(data);
-
-			userName = data.get("CustomerUserName");
-			password = data.get("CustomerPassword");
-			invalidPassword = data.get("InvalidPassword");
-			searchVal=data.get("searchText");
-			maxVal = data.get("MaxPriceValueForFilter");
-			minVal = data.get("MinPriceValueForFilter");
-			UPIdetail=data.get("UPIdetail");
-
+		   extent.loadConfig(new File(System.getProperty("user.dir")+"/extent-config.xml"));
+		   data=new TestData(Constants1.TESTDATA_SHEETNAME);
 	}
 	  
 	  @Test(priority=1)
@@ -74,7 +51,7 @@ public class EbayApplication extends DriverClass {
 		log.info("Login in  to Application Started");
 		logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
 		try{
-		boolean loginStatus = loginPage.customerLogin(userName,password);
+		boolean loginStatus = loginPage.customerLogin(data.getUserName(),data.getPassword());
 		if(loginStatus)
 		{
 		logger.log(LogStatus.PASS, "Login in  to Application is Successful");
@@ -95,7 +72,7 @@ public class EbayApplication extends DriverClass {
 	{
 		log.info("Select Product Started");
 		logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
-		Boolean searchProdStatus=productPage.searchProductInApp(searchVal);
+		Boolean searchProdStatus=productPage.searchProductInApp(data.getSearchVal());
 		if(searchProdStatus)
 		{
 			logger.log(LogStatus.PASS, "Search product in the Aplication is Successful");
@@ -114,7 +91,7 @@ public class EbayApplication extends DriverClass {
 			log.info("Select Product Started");
 			logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
 			try{
-			productPage.setFilterForProduct(minVal,maxVal);
+			productPage.setFilterForProduct(data.getMinVal(),data.getMaxval());
 			boolean selectProductStatus=productPage.selectProduct();
 			if(selectProductStatus)	{
 				logger.log(LogStatus.PASS, "Select product in the Aplication is Successful");
@@ -143,7 +120,7 @@ public class EbayApplication extends DriverClass {
 		{
 			log.info("Payment process of the selected  Product Started");
 			logger = extent.startTest(Thread.currentThread().getStackTrace()[1].getMethodName()).assignCategory(this.getClass().getSimpleName());
-			boolean paymentStatus=paymentPage.processPayment(UPIdetail);
+			boolean paymentStatus=paymentPage.processPayment(data.getUpiDetail());
 			if(paymentStatus)
 			{
 				logger.log(LogStatus.FAIL, "payment was done  sucessfully");
@@ -157,17 +134,19 @@ public class EbayApplication extends DriverClass {
 		}
 		
 		@AfterMethod(alwaysRun=true)
-		 public void getResult(ITestResult result){
+		 public void getResult(ITestResult result) throws Exception{
 			 if(result.getStatus() == ITestResult.FAILURE){
 			 logger.log(LogStatus.FAIL, "Failed Test case :"+result.getName());
 			 logger.log(LogStatus.FAIL, "Test case "+result.getName()+" "+result.getThrowable().getMessage());
+			 String screenshotPath = KeyActions.getScreenshot(driver);
+			 logger.log(LogStatus.FAIL,logger.addScreenCapture(screenshotPath) );
 			 }else if(result.getStatus() == ITestResult.SKIP){
 			 logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 			 }
 			 extent.endTest(logger);
 			 }
-			 @AfterTest
-			 public void endReport(){
+		@AfterTest
+		public void endReport(){
 			                extent.flush();
 			                extent.close();
 			    } 

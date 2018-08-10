@@ -1,12 +1,10 @@
 package com.utility.driver;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 import java.io.File;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -15,6 +13,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 
+import com.utility.CapabilitiesTestData;
 import com.utility.Constants1;
 import com.utility.ReadTestData;
 
@@ -26,27 +25,14 @@ public class DriverClass extends ReadTestData {
 	protected static final Logger LOGGER = Logger.getLogger(DriverClass.class);
 	public static WebDriver driver = null;
 	ReadTestData readData;
+	CapabilitiesTestData data;
 
-	String applicationName;
-	String platformName;
-	String osVersion;
-	String deviceName;
-	String appackage;
-	String appActivity;
-
+	
 	@BeforeSuite
 	public void suite() throws Exception {
 		try {
 			String detailInstanceName = new Object() {   }.getClass().getEnclosingMethod().getName();
-			 Map<String, String> data = new HashMap<String, String>();
-			 data =getCellData(Constants1.TESTDATA_FILEPATH,Constants1.CAPABILITIE_SHEETNAME);
-			System.out.println(data);
-
-			platformName = data.get("platformName");
-			osVersion = data.get("osVersion");
-			deviceName = data.get("deviceName");
-			appackage = data.get("appPackage");
-			appActivity = data.get("appActivity");
+			 data=new CapabilitiesTestData(Constants1.CAPABILITIE_SHEETNAME);
 			driver = getDriver();
 
 			System.out.println(driver);
@@ -64,9 +50,9 @@ public class DriverClass extends ReadTestData {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 			capabilities.setCapability("autoAcceptAlerts", true);
-			capabilities.setCapability("platformName", platformName.toString());
-			capabilities.setCapability("deviceName", deviceName.toString());
-			capabilities.setCapability("platformVersion", osVersion.toString());
+			capabilities.setCapability("platformName", data.getPlatformName());
+			capabilities.setCapability("deviceName", data.getDeviceName());
+			capabilities.setCapability("platformVersion", data.getOsVerion());
 			capabilities.setCapability("newCommandTimeout", 300);
 			capabilities.setCapability("noReset", false);
 			capabilities.setCapability("fullReset", true);
@@ -74,8 +60,11 @@ public class DriverClass extends ReadTestData {
 			capabilities.setCapability("resetKeyboard", "true");
 			capabilities.setCapability("setWebContentsDebuggingEnabled", true);
 			capabilities.setCapability("app", app.getAbsolutePath());
-			capabilities.setCapability("appPackage",appackage.toString());
-			capabilities.setCapability("appActivity",appActivity.toString());
+			capabilities.setCapability("appPackage",data.getAppPackage());
+			capabilities.setCapability("appActivity",data.getAppActivity());
+			capabilities.setCapability(MobileCapabilityType.TAKES_SCREENSHOT, true);
+
+
 			driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 

@@ -6,5 +6,6 @@ public class Constants1 {
 	public static final String CAPABILITIE_SHEETNAME ="capabilitiesDetails";
 	public static final String TESTDATA_SHEETNAME ="testData";
 	public static final String TESTDATA_FILEPATH=System.getProperty("user.dir")+"/src/test/resources/TestData.xlsx";
+	public static final String SCREENSHOTS_FILEPATH=System.getProperty("user.dir")+"/test-output/screenshots/";
 	
 }

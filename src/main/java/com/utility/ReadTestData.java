@@ -14,19 +14,19 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadTestData {
 	
-	    public FileInputStream fis = null;
-	    public XSSFWorkbook workbook = null;
-	    public XSSFSheet sheet = null;
-	    public XSSFRow row = null;
-	    public XSSFCell cell = null;
-	    public String colVal_row0;
-	    public String colVal_row1;
+	    public static FileInputStream fis = null;
+	    public static XSSFWorkbook workbook = null;
+	    public static XSSFSheet sheet = null;
+	    public static XSSFRow row = null;
+	    public static XSSFCell cell = null;
+	    public static String colVal_row0;
+	    public static String colVal_row1;
 	    
 	    
-	    Map<String, String> data = null;
+	    static Map<String, String> data = null;
 	 
 	   
-	    public Map<String, String> getCellData(String filePath,String sheetName) throws IOException
+	    public static Map<String, String> getCellData(String filePath,String sheetName) throws IOException
 	    {
 	    	fis = new FileInputStream(filePath);
 	    	workbook = new XSSFWorkbook(fis);
