@@ -70,6 +70,37 @@ public class KeyActions extends DriverClass {
 			log.error("Element is not visible on the page", e);
 		}
 	}
+	
+	/**
+	 * Wait function for the element to be visible
+	 * 
+	 * @param locator
+	 */
+	public void waitUntilElementClickable(WebElement locator) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			log.debug("Sync up for the next element..." + locator);
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+		} catch (Exception e) {
+			log.error("Element is not visible on the page", e);
+		}
+	}
+	
+	/**
+	 * Wait function for the element to be visible
+	 * 
+	 * @param locator
+	 */
+	public boolean isClickable(WebElement locator) {
+		boolean status=false;
+		try {
+			status=	locator.isEnabled();
+			return status;
+		} catch (Exception e) {
+			log.error("Element is not visible on the page", e);
+			return status;
+		}
+	}
 
 	/**
 	 * verify whether the element is displayed
@@ -81,7 +112,7 @@ public class KeyActions extends DriverClass {
 
 		boolean status = false;
 		try {
-			status = locator.isDisplayed();
+			status =  new WebDriverWait(driver,6).until(ExpectedConditions.visibilityOf(locator)).isDisplayed();
 			log.debug("Verifying element displayed: " + status);
 
 		} catch (Exception e) {

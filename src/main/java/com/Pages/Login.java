@@ -76,11 +76,7 @@ public class Login extends KeyActions {
 			log.info("Entered User name and password");
 			click(customerSignInButton);
 			
-			if(isDisplayed(loginErrorMessage))
-			{
-				log.info("Provided Credentials are invalid");
-				return false;
-			}
+		
 
 			if (isDisplayed(mayBeLaterButton)) {
 				click( mayBeLaterButton);

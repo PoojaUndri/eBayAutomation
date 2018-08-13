@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.utility.KeyActions;
-import com.utility.locators.PaymentPageLocator;
 
 public class PaymentPage extends KeyActions {
 	
@@ -68,13 +67,17 @@ public boolean processPayment(String upidetail) throws Exception {
 		waitUntilElementVisible(UPIpaymentButton);
 		if (isDisplayed(UPIpaymentButton)) {
 			click(UPIpaymentButton);
-			Thread.sleep(5000);
-			click(selectUPIRadioButton);
-			click(payButton);
+			if(isClickable(selectUPIRadioButton))
+					{
+				log.info("UPI option selected");
+				click(selectUPIRadioButton);
+				click(payButton);
+				
+					}
+			
 			if(isDisplayed(VPAddress))
 			{
 			log.info("Entered UPI payment option");
-			Thread.sleep(5000);
 			sendKeys(VPAddress,upidetail);
 			click(makePaymentButton);
 			}
